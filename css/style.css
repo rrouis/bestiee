@@ -1,0 +1,305 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
+
+body {
+  margin: 0 auto;
+  color: #000;
+  font-family: "Avenir Next", Verdana, "Noto Sans Japanese", "Hiragino Kaku Gothic Pro", "游ゴシック", "Yu Gothic", "メイリオ", Meiryo, Osaka, sans-serif;
+  letter-spacing: 0.3em;
+  color: #4a4a4a;
+}
+
+h2, h3 {
+  font-size: 36px;
+  font-weight: 100;
+}
+
+h2 {
+  margin-bottom: 50px;
+  font-size: 36px;
+  font-weight: 100;
+}
+
+p {
+  font-weight: 100;
+  line-height: 3em;
+}
+
+span {
+  font-size: 36px;
+}
+
+a {
+  color: #fff;
+  font-weight: 100;
+  text-decoration: none;
+  transition: 0.6s;
+}
+
+a:hover {
+  opacity: 0.5;
+}
+
+.target{
+    opacity: 0;
+}
+
+.fadeIn{
+    animation-duration: 1s;
+    animation-name: fadeIn;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+/* css animation ------------------------- */
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+
+.global_navigation {
+  position: fixed; /*600px 以下では画面下に固定*/
+  background-color: rgba(0, 0, 0, 0.3);
+  background-image: url("../images/gr.png");
+  top: -3px;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  height: 78px;
+}
+.global_navigation .gnav_list_item {
+  list-style: none;
+}
+.global_navigation .gnav_dl {
+  position: absolute;
+  right: 60px;
+  top: 10px;
+  list-style: none;
+}
+.global_navigation .gnav_dl img {
+  width: 200px;
+  margin-right: 0;
+}
+#nav ul {
+  display: none;
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
+#nav li {
+  float: left;
+  width: 50%;
+  border-bottom: none;
+  text-align: center;
+}
+#nav li a {
+  font-size: 18px;
+  padding: 12px 0;
+  border-top: 1px solid #fff;
+  background: #888;
+  color: #fff;
+  display: block;
+  margin: auto;
+  opacity: .9;
+}
+/* global_navigation */
+
+
+
+.top_toppage {
+  background-size: cover;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.top_container {
+  z-index: 2;
+  position: absolute;
+  top: 100px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  text-align: center;
+}
+
+ .top_container .main {
+  margin-top: 20%;
+  color: #fff;
+}
+
+.top_container p {
+  color: #fff;
+  font-size: 36px;
+  line-height: normal;
+}
+
+.top_toppage video {
+  margin: 0 auto;
+  z-index: 1;
+  width: 100%;
+}
+
+.scrolldown img {
+  margin-top: 50px;
+}
+/* top */
+
+
+
+.mc_container {
+  position: relative;
+  height: 1000px;
+}
+.lead {
+  text-align: center;
+  padding: 100px;
+  margin: 0;
+}
+
+.lead span {
+  font-size: 18px;
+}
+
+.morning {
+  position: absolute;
+  left: 50%;
+  top: 340px;
+  margin-left: -630px;
+  color: #78A1B2;
+}
+.night {
+  position: absolute;
+  left: 50%;
+  top: 680px;
+  margin-left: 290px;
+  color: #446A92;
+}
+.mc_img {
+  position: absolute;
+  left: 50%;
+  margin-left: -258px;
+}
+/* mc */
+
+
+
+.m_lead {
+  text-align: right;
+}
+.ml {
+  margin-bottom: 100px;
+  height: 492px;
+  position: relative;
+}
+.ml_img img {
+  position: absolute;
+  left: 0;
+  width: 600px;
+}
+.ml_contents {
+  position: absolute;
+  left: 50%;
+  top: 25%;
+}
+/* ml */
+
+
+
+.mr {
+  margin: 100px 0;
+  height: 492px;
+  position: relative;
+}
+.mr_img img {
+  position: absolute;
+  right: 0;
+  width: 600px;
+}
+.mr_contents {
+  position: absolute;
+  left: 100px;
+  top: 25%;
+  text-align: left;
+}
+/* mr */
+
+
+
+.dr_cover_box {
+	width: 100%;
+	min-width: 1020px;
+	background: url(../images/poster.png) no-repeat;
+	background-position: center;
+	background-size: 100%;
+	}
+.dr_cover {
+  position: relative;
+	height: 750px;
+	margin: 0 auto;
+}
+.dr_contents {
+  text-align: center;
+  color: #fff;
+  padding: 100px 0;
+}
+.button_container img{
+  width: 300px;
+  margin: 50px auto;
+}
+/* dr */
+
+
+
+.share {
+  background-color: #fff;
+  padding: 100px 0;
+}
+.share_contents {
+  text-align: center;
+}
+.insta_share img {
+  width: 1100px;
+  margin-top: 50px;
+}
+/* share */
+
+
+
+.footer_cover_box {
+	width: 100%;
+	min-width: 1020px;
+	background: url(../images/poster.png) no-repeat;
+	background-position: center;
+	background-size: 100%;
+  padding: 50px 0;
+	}
+.footer_cover {
+  position: relative;
+	margin: 0 auto;
+}
+.footer_box {
+  font-size: 18px;
+}
+#footer_list {
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+  width: 500px;
+  display: flex;
+  justify-content: space-between;
+}
+.copylight {
+  color: #fff;
+  text-align: center;
+  font-size: 12px;
+}
+/* footer */
